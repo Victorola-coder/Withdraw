@@ -1,0 +1,190 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #585858;
+}
+
+.wihdraw,
+.widthhere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-family: monospace;
+  text-align: center;
+  margin: 12px 350px;
+  color:yellow;
+}
+
+select{
+  outline:none;
+}
+
+.Withdraw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  background-color: transparent;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.navbar {
+  background-color: #126e51;
+  width: 100%;
+  padding: 35px 0px;
+}
+
+.font {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color:aliceblue;
+}
+
+.input-type {
+  padding: 6px;
+  padding-right: 16px;
+  margin-left: 40px;
+  margin-top: 11px;
+}
+
+.input {
+  padding: 6px;
+  padding-right: 16px;
+  border-radius: 10px;
+  border-color: #dddedd;
+  font-family: cursive;
+  width: 400px;
+  height: 50px;
+  font-size: 15px;
+  outline:none;
+}
+
+input:focus {
+  background-color: whitesmoke;
+  opacity: 0.9;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #f4511e;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin: 0 100px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+/*mobile view*/
+@media (max-width: 767px) {
+  .wihdraw,
+  .widthhere {
+    margin: 12px 40px;
+    text-align: center;
+  }
+
+  .navbar {
+    width: 100%;
+    margin: auto;
+  }
+
+  .Withdraw {
+    width: 100%;
+    margin: auto;
+
+  }
+
+.button{
+  width: 130px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.input{
+  width: 250px;
+}
+
+.button{
+  margin: auto;
+}
+
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .navbar{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar{
+    width: 100%;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .navbar{
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  .navbar{
+    width: 100%;
+  }
+}
