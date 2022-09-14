@@ -61,7 +61,7 @@ select{
   padding-right: 16px;
   border-radius: 10px;
   border-color: #dddedd;
-  font-family: cursive;
+  font-family: system-ui, Arial;
   width: 400px;
   height: 50px;
   font-size: 15px;
